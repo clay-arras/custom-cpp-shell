@@ -18,6 +18,6 @@ int main() {
   std::getline(std::cin, input);
 
   if (!function_map.contains(input)) {
-    std::cout << input << ": not found\n";
+    std::cout << input << ": command not found\n";
   }
 }
