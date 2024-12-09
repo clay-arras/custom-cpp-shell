@@ -6,7 +6,7 @@ void exit_cmd(std::vector<std::string> args) {
 
 void echo_cmd(std::vector<std::string> args) {
   for (int i=1; i<(int)args.size(); i++) {
-    std::cout << args[i] << " ";
+    std::cout << (i == 1 ? "" : " ") << args[i];
   }
   std::cout << std::endl;
 }
