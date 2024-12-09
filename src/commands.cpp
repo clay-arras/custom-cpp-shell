@@ -23,7 +23,7 @@ void type_cmd(std::vector<std::string> args) {
   for (std::string &path: paths) {
     std::string full_path = path + "/" + args[1];
     if (std::filesystem::exists(full_path)) {
-        std::cout << args[1] << "is at " + full_path << std::endl;
+        std::cout << args[1] << " is " + full_path << std::endl;
         return;
     }
   }
