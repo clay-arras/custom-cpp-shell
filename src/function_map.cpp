@@ -26,4 +26,5 @@ bool FunctionMap::contains(const std::string& command) {
 FunctionMap::FunctionMap() {
     function_map["exit"] = exit_cmd;
     function_map["echo"] = echo_cmd;
+    function_map["type"] = type_cmd;
 }
