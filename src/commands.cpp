@@ -17,6 +17,6 @@ void type_cmd(std::vector<std::string> args) {
   if (command_names.find(args[1]) == command_names.end()) {
     std::cout << args[1] << ": not found" << std::endl;
   } else {
-    std::cout << args[1] << " is a shell built-in" << std::endl;
+    std::cout << args[1] << " is a shell builtin" << std::endl;
   }
 }
