@@ -5,6 +5,8 @@
 #include <string>
 #include <iostream>
 #include <unordered_set>
+#include <filesystem>
+#include "helpers.hpp"
 
 extern std::unordered_set<std::string> command_names;
 

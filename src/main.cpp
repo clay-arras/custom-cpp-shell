@@ -16,7 +16,7 @@ int main() {
     std::string input;
     std::getline(std::cin, input);
 
-    std::vector<std::string> args = split_string(input);
+    std::vector<std::string> args = split_string(input, ' ');
     if (!FunctionMap::getInstance().contains(args[0])) {
       std::cout << args[0] << ": command not found\n";
     } else {
