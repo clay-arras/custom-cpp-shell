@@ -1,6 +1,6 @@
 #include "commands.hpp"
 
-std::unordered_set<std::string> command_names = {"exit", "echo", "type"};
+std::unordered_set<std::string> command_names = {"exit", "echo", "type", "pwd"};
 
 void exit_cmd(std::vector<std::string> args) {
   exit(0);
@@ -21,4 +21,8 @@ void type_cmd(std::vector<std::string> args) {
   } else {
     std::cout << args[1] << ": not found" << std::endl;
   }
+}
+
+void pwd_cmd(std::vector<std::string> args) {
+    std::cout << std::filesystem::current_path() << std::endl;
 }

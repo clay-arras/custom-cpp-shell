@@ -27,4 +27,5 @@ FunctionMap::FunctionMap() {
     function_map["exit"] = exit_cmd;
     function_map["echo"] = echo_cmd;
     function_map["type"] = type_cmd;
+    function_map["pwd"] = pwd_cmd;
 }
