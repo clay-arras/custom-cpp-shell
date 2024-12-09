@@ -25,5 +25,5 @@ void type_cmd(std::vector<std::string> args) {
 
 void pwd_cmd(std::vector<std::string> args) {
     std::string path = std::filesystem::current_path();
-    std::cout << path.substr(1, path.size() - 1) << std::endl;
+    std::cout << path << std::endl;
 }
